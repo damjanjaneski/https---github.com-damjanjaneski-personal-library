@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Book List</h1>
+      <button onclick="showInputs()" class="btn">New Book</button>
+      <div id="show-on-click">
+        <div id="user-data">
+          <div>
+            <label for="">Title:</label>
+            <input type="text" id="title" />
+          </div>
+          <div>
+            <label for="">Author:</label>
+            <input type="text" id="author" />
+          </div>
+          <div>
+            <label for="">Category:</label>
+            <input type="text" id="category" />
+          </div>
+          <div id="checkbox">
+            <label for="">Read:</label>
+            <input type="checkbox" name="" id="read" />
+          </div>
+        </div>
+        <button onclick="addBook()" class="btn">Add Book</button>
+      </div>
+      <div>
+        <table cellspacing="0">
+          <tr id="head-row">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Read</th>
+            <th>Remove</th>
+          </tr>
+          <tr>
+            <td>Hamlet</td>
+            <td>William Shakespeare</td>
+            <td>Tragedy</td>
+            <td>
+              <input type="checkbox" name="read" id="book-1" value="" />
+            </td>
+            <td>
+              <button onclick="removeBook(event)" id="remove-1">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Harry Potter</td>
+            <td>J.K. Rowling</td>
+            <td>Fantasy</td>
+            <td><input type="checkbox" name="read" id="book-2" value="" /></td>
+            <td>
+              <button onclick="removeBook(event)" id="remove-2">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Gambler</td>
+            <td>F.M. Dostoevski</td>
+            <td>Novel</td>
+            <td><input type="checkbox" name="read" id="book-3" value="" /></td>
+            <td>
+              <button onclick="removeBook(event)" id="remove-3">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>The Da Vinci Code</td>
+            <td>Dan Brown</td>
+            <td>Mystery</td>
+            <td><input type="checkbox" name="read" id="book-4" value="" /></td>
+            <td>
+              <button onclick="removeBook(event)" id="remove-4">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td>War and peace</td>
+            <td>L.N. Tolstoy</td>
+            <td>Historical novel</td>
+            <td><input type="checkbox" name="read" id="book-5" value="" /></td>
+            <td>
+              <button onclick="removeBook(event)" id="remove-5">Remove</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

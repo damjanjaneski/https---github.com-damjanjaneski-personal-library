@@ -1,0 +1,136 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  font-family: cursive;
+  color: rgb(53, 16, 42);
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #879af2, #d3208b, #fda000);
+  height: 1025px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 60px;
+  border-bottom: 1px solid rgb(245, 226, 202);
+}
+
+#title,
+#author,
+#category {
+  height: 25px;
+  background-color: rgb(245, 226, 202);
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 5px rgb(71, 91, 146), 0px 0px 10px rgb(71, 91, 146),
+    0px 0px 15px rgb(71, 91, 146);
+  font-size: large;
+}
+
+#main {
+  text-align: center;
+  font-size: 15px;
+}
+
+.btn {
+  margin-bottom: 40px;
+  height: 50px;
+  width: 170px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 2px solid rgb(0, 0, 255);
+  background-color: lightblue;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#user-data {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 30px;
+  margin-right: 2px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#head-row {
+  height: 70px;
+}
+
+th {
+  border-top: 1px solid rgb(245, 226, 202);
+  border-bottom: 1px solid rgb(245, 226, 202);
+  width: 20%;
+  font-size: 30px;
+}
+
+table tr {
+  height: 50px;
+}
+
+#show-on-click {
+  display: none;
+}
+
+table tr:not(:first-child) {
+  visibility: hidden;
+}
+
+td button {
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 255);
+  background-color: lightblue;
+  height: 25px;
+}
+
+table tr input,
+#read {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input:focus {
+  scale: 1.08;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(52, 52, 163);
+  color: white;
+  scale: 1.08;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+table tr:not(:first-child) {
+  font-size: 20px;
+}
+
+table tr button {
+  width: 100px;
+  height: 36px;
+  cursor: pointer;
+}
